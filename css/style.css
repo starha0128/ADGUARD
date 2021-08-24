@@ -101,7 +101,7 @@ header{
     position: relative;
     height: 840px;
     /* outline: 1px solid green; */
-    background-image: url(asset/mainPage.png);
+    background-image: url(./asset/mainPage.png);
 }
 div#main>#csBox{
     position: absolute;
