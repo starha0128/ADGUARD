@@ -228,6 +228,8 @@ div#yellowBg .container #explain h4{
 }
 
 #botFunc{
+    display: block;
+    height: 1304px;
     padding: 100px 100px 0;
 }
 #botFunc h3{
@@ -243,7 +245,7 @@ div#yellowBg .container #explain h4{
     border-bottom: 4px solid white;
     margin: 40px auto;
 }
-#botFunc>div{
+#botFunc #leftFuncMenu{
     float: left;
 }
 
@@ -311,9 +313,14 @@ div#yellowBg .container #explain h4{
     letter-spacing: -1px;
     font-weight: 700;
 }
-/* #mockUp{
+#mockUp{
     display: block;
     float: right;
+    width: 280px;
+    float: right;
+}
+#mockUp img{
+    width: 100%;
 }
 
 #plan{
@@ -324,7 +331,7 @@ div#yellowBg .container #explain h4{
 }
 #plan h4{
     margin-top: 10px;
-} */
+}
 
 
 
