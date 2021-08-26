@@ -101,7 +101,7 @@ header{
     position: relative;
     height: 840px;
     /* outline: 1px solid green; */
-    background-image: url(./asset/mainPage.png);
+    /* background-image: url(./asset/mainPage.png); */
 }
 div#main>#csBox{
     position: absolute;
@@ -228,8 +228,8 @@ div#yellowBg .container #explain h4{
 }
 
 #botFunc{
-    display: block;
-    height: 1304px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 100px 100px 0;
 }
 #botFunc h3{
@@ -245,57 +245,53 @@ div#yellowBg .container #explain h4{
     border-bottom: 4px solid white;
     margin: 40px auto;
 }
-#botFunc #leftFuncMenu{
+#leftFuncMenu{
+    max-width: 580px;
     float: left;
 }
 
-#botFunc ul{
-    display: flex; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    height: 1040px;
-    width: 600px;
+#leftFuncMenu ul{
+    column-count: 2;
+    width: 100%;
 }
-#botFunc ul li{
-    position: relative;
-    display: block;
+#leftFuncMenu ul li{
+    display: inline-block;
     width: 280px;
-    height: auto;
     box-sizing: border-box;
     padding: 20px;
-    margin: 0 20px 20px 0;
+    margin: 10px 20px 10px 0;
     text-align: left;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
     transition: .5s;
 }
-#botFunc ul li:hover{
+#funcInfoBox ul li:hover{
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.5);
 }
 
-#botFunc ul li .funcName{
+#funcInfoBox ul li .funcName{
     display: flex;
     align-items: center;
     
     letter-spacing: -1px;
 }
-#botFunc ul li .funcName i{
+#funcInfoBox ul li .funcName i{
     float: left;
 }
-#botFunc ul li .funcName h5{
+#funcInfoBox ul li .funcName h5{
     float: right;
     margin-left: 10px;
     font-weight: 700;
 }
-#botFunc ul li p{
+#funcInfoBox ul li p{
     display: block;
     line-height: 1.2;
     letter-spacing: -1px;
     margin-top: 16px;
 }
-#botFunc ul li p span{
+#funcInfoBox ul li p span{
     font-weight: 600;
 }
 #funcSch{
@@ -306,6 +302,7 @@ div#yellowBg .container #explain h4{
     opacity: .6;
     display: flex;
     align-items: center;
+    margin-top: 10px;
     flex-direction: row;
     justify-content: center;
 }
@@ -313,17 +310,34 @@ div#yellowBg .container #explain h4{
     letter-spacing: -1px;
     font-weight: 700;
 }
+
 #mockUp{
-    display: block;
-    float: right;
-    width: 280px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 380px;
     float: right;
 }
+#mockUp div{
+    display: block;
+    width: 80px;
+    margin-right: 20px;
+}
+#mockUp div{
+    font-size: 32px;
+}
 #mockUp img{
-    width: 100%;
+    width: 280px;
+}
+
+#funcInfoBox:after{
+    display: block;
+    content: "";
+    clear: both;
 }
 
 #plan{
+    display: block;
     padding: 100px 100px 0;
 }
 #plan h3{
@@ -332,7 +346,6 @@ div#yellowBg .container #explain h4{
 #plan h4{
     margin-top: 10px;
 }
-
 
 
 
