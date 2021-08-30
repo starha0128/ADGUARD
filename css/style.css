@@ -49,7 +49,16 @@ header{
 .fs24{font-size: 24px;}
 .fs42{font-size: 42px;}
 .fs32{font-size: 32px;}
+.fs28{font-size: 28px;}
 .fs18{font-size: 18px;}
+
+.zIdx1{z-index: 1;}
+.zIdx2{z-index: 2;}
+.zIdx3{z-index: 3;}
+
+.guestClr{color: #666666;}
+.basicClr{color: #6a88ff;}
+.proClr{color: #a35061;}
 
 .container{
     max-width: 1200px;
@@ -338,7 +347,7 @@ div#yellowBg .container #explain h4{
 
 #plan{
     display: block;
-    padding: 100px 100px 0;
+    padding: 100px 0;
 }
 #plan h3{
     font-weight: 700;
@@ -346,6 +355,70 @@ div#yellowBg .container #explain h4{
 #plan h4{
     margin-top: 10px;
 }
+#plan ul{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#plan ul li{
+    position: relative;
+    display: block;
+    width: 380px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+#plan ul li .bestPlan{
+    position: absolute;
+}
+#plan ul li .bestSell{
+    top: -4px;
+    left: -4px;
+}
+#plan ul li div:nth-child(3){
+    display: block;
+    left: 0;
+    top: 0;
+    width: 380px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+#plan ul li h4{
+    margin-top: 10px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+#plan ul li h5{
+    font-weight: 600;
+    margin-top: 4px;
+}
+#plan ul li p.planEx{
+    font-size: 20px;
+    font-weight: 600;
+    color: #666666;
+    margin-top: 52px;
+}
+#plan ul li div.prcBtn{
+    display: inline-block;
+    font-weight: 600;
+    width: 180px;
+    height: 40px;
+    background: #f7e600;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+div.prcBtn p span{
+    font-size: 16px;
+}
+
 
 
 
