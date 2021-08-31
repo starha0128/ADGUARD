@@ -354,16 +354,39 @@ div#yellowBg .container #explain h4{
     width: 380px;
     float: right;
 }
-#mockUp div{
+#mockUp div#icon{
     display: block;
     width: 80px;
+    text-align: center;
     margin-right: 20px;
+}
+#mockUp div#icon i{
+    text-align: center;
 }
 #mockUp div{
     font-size: 32px;
 }
-#mockUp img{
+#mockUp #mocUpBox{
+    width: 380px;
+    height: 1230px;
+    display: block;
+    float: right;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    /* display: flex; */
+}
+#mockUp #mocUpBox img{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+
     width: 280px;
+}
+#mockUp #mocUpBox img:nth-child(1){
+    width: 268px;
+    border-radius: 20px;
 }
 
 #funcInfoBox:after{
@@ -513,6 +536,7 @@ footer #address{
         display: none;
     }
     #leftFuncMenu{
+
         max-width: 880px;
         margin: 0 auto;
     }
