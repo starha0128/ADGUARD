@@ -163,7 +163,7 @@ p.subTxt span{
 }
 .hoverAni:hover{
     transform: translateY(-5px);
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.5);
     z-index: 2;
 }
@@ -239,17 +239,36 @@ div#yellowBg .container #explain h4{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #yellowBg #explain ul li{
     background: white;
     box-sizing: border-box;
     padding: 30px 10px 30px;
     border-radius: 10px;
+    width: 23%;
     height: 200px;
     margin-bottom: 20px;
     transition: .5s;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+@media (min-width: 640px) and (max-width:930px){
+    #yellowBg #explain ul li{
+        width: 48%;
+    }
+}
+@media (max-width: 640px){
+    #explain h3{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    #explain h4{
+        font-size: 24px;
+    }
+    #yellowBg #explain ul li{
+        width: 90%;
+    }
 }
 #yellowBg #explain ul li img{
     width: 64px;
@@ -295,7 +314,7 @@ div#yellowBg .container #explain h4{
     width: 280px;
     box-sizing: border-box;
     padding: 20px;
-    margin: 10px 20px 10px 0;
+    margin: 10px 0;
     text-align: left;
     background-color: white;
     border-radius: 10px;
@@ -388,6 +407,94 @@ div#yellowBg .container #explain h4{
     width: 268px;
     border-radius: 20px;
 }
+@media (max-width:1196px){
+    #botFunc{
+        padding: 100px 20px 0;
+    }
+    #mockUp{
+        display: none;
+    }
+    #leftFuncMenu{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:931px) and (max-width:1196px) {
+    /* #botFunc{
+        padding: 100px 20px 0;
+    }
+    #mockUp{
+        display: none;
+    }
+    #leftFuncMenu{
+        max-width: 100%;
+        margin: 0 auto;
+    } */
+    #leftFuncMenu ul{
+        column-count: 3;
+        width: 100%;
+    }
+    #leftFuncMenu ul li{
+        width: 100%;
+    }
+    #funcSch{
+        width: 100%;
+        height: 100px;
+    }
+}
+@media (min-width:640px) and (max-width:930px){
+    /* #botFunc{
+        padding: 100px 20px 0;
+    }
+    #mockUp{
+        display: none;
+    }
+    #leftFuncMenu{
+        max-width: 100%;
+        margin: 0 auto;
+    } */
+    #leftFuncMenu ul{
+        column-count: 2;
+        width: 100%;
+    }
+    #leftFuncMenu ul li{
+        width: 100%;
+    }
+    #funcSch{
+        width: 100%;
+        height: 100px;
+    }
+}
+@media (max-width:640px){
+    #botFunc h3{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    #botFunc h4{
+        font-size: 24px;
+    }
+    /* #botFunc{
+        padding: 100px 20px 0;
+    }
+    #mockUp{
+        display: none;
+    }
+    #leftFuncMenu{
+        max-width: 100%;
+        margin: 0 auto;
+    } */
+    #leftFuncMenu ul{
+        column-count: 1;
+        width: 100%;
+    }
+    #leftFuncMenu ul li{
+        width: 100%;
+    }
+    #funcSch{
+        width: 100%;
+        height: 100px;
+    }
+}
 
 #funcInfoBox:after{
     display: block;
@@ -408,13 +515,14 @@ div#yellowBg .container #explain h4{
 #plan ul{
     margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #plan ul li{
     position: relative;
     display: block;
-    width: 380px;
+    width: 32%;
     height: 320px;
     box-sizing: border-box;
     padding: 20px;
@@ -435,7 +543,7 @@ div#yellowBg .container #explain h4{
     left: 0;
     top: 0;
     width: 100%;
-    height: 320px;
+    height: 100%;
     box-sizing: border-box;
     padding: 20px;
     background-color: white;
@@ -469,6 +577,20 @@ div.prcBtn p span{
     font-size: 16px;
 }
 
+@media (max-width:910px) {
+    #plan{
+        padding: 100px 20px;
+    }
+    #plan ul li{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 288px;
+    }
+    #plan ul li p.planEx{
+        margin-top: 20px;
+    }
+}
+
 #contact .textAlCenter{
     text-align: center;
     padding-top: 100px;
@@ -498,6 +620,12 @@ div.prcBtn p span{
 }
 #contact #contactBtn img{
     width: 100%;
+}
+
+@media (max-width:580px){
+    #contact .textAlCenter p{
+        font-size: 20px;
+    }
 }
 
 footer{
@@ -531,21 +659,7 @@ footer #address{
     margin-top: 20px;
 }
 
-@media (max-width:1196px) {
-    #mockUp{
-        display: none;
-    }
-    #leftFuncMenu{
 
-        max-width: 880px;
-        margin: 0 auto;
-    }
-    #leftFuncMenu ul{
-        column-count: 3;
-        width: 100%;
-    }
-    
-}
 
 /* #yellowBg .container #explain{
     width: 100%;
