@@ -148,7 +148,7 @@ div#burger{
     font-size: 16px;
     margin: 10px 0;
     border-radius: 8px;
-    transition: .5s;
+    transition: .2s;
 }
 #burger ul li:hover{
     background: #F7E600;
