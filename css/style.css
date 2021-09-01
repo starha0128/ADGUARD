@@ -108,6 +108,68 @@ header{
 .headerContainer div#menu ul li:hover a{
     font-weight: 600;
 }
+div#burger{
+    /* display: none; */
+    /* display: block; */
+    position: absolute;
+    text-align: center;
+    right: 0;
+    margin: 0 10px;
+}
+#burger div{
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    transition: .5s;
+}
+#burger div i{
+    font-size: 24px;
+    line-height: 40px;
+}
+#burger div:hover{
+    background: #F7E600;
+}
+#burger ul{
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    top: 50px;
+    right: 0;
+    width: 280px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 10px 13px -7px rgba(0,0,0,0.2);
+}
+#burger ul li{
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: .5s;
+}
+#burger ul li:hover{
+    background: #F7E600;
+}
+#burger ul li a{
+    display: block;
+    width: 100%;
+    line-height: 36px;
+}
+
+@media (max-width:680px){
+    #menu{
+        display: none;
+    }
+}
+@media (min-width:681px){
+    #burger{
+        display: none;
+    }
+}
+
 
 #content div#main{
     position: relative;
