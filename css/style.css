@@ -173,19 +173,37 @@ div#burger{
 
 #content div#main{
     position: relative;
+    /* padding: 0 20px; */
     height: 840px;
     /* outline: 1px solid green; */
     /* background-image: url(./asset/mainPage.png); */
 }
 div#main>#csBox{
     position: absolute;
-    width: 480px;
+    box-sizing: border-box;
     height: 360px;
     top: 30%;
-    left: 100px;
+    /* left: 100px; */
     z-index: 2;
     /* outline: 1px solid orange; */
 }
+
+@media (max-width:1180px){
+    #content div#main{
+        padding: 0 20px;
+    }
+}
+@media (max-width:780px){
+    #content div#main{
+        height: 740px;
+    }
+}
+@media (min-width:1181px){
+    #main>#csBox{
+        padding-left: 100px;
+    }
+}
+
 div#main #csBox>div.q{
     font-weight:700;
     line-height: 1.2;
@@ -249,8 +267,8 @@ p.subTxt span{
 div#main #mainBg{
     position: absolute;
     z-index: 1;
-    width: 580px;
-    left: 50%;
+    width: 50%;
+    right: 20px;
     top: 30%;
     /* outline: 1px solid green; */
     animation: upDownLittle 5s ease 0s infinite ;
@@ -269,6 +287,38 @@ div#main #mainBg img{
         transform:translateY(2%)
     }
 }
+
+@media (max-width:980px){
+    div#main #mainBg{
+        width: 52%;
+        min-width: 300px;
+        top: 136px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        /* transform: translateX(-50%); */
+    }
+    div#main #csBox{
+        width: 100%;
+        height: 260px;
+        left: 0;
+        top: calc(100%);
+        transform: translateY(-120%);
+        margin: 0 auto;
+        text-align: center;
+    }
+    div#main #csBox div.q{
+        border: none;
+    }
+    div#main #csBox p.mainTxt{
+        font-size: 36px;
+    }
+    div#main #csBox div.goBtn{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 
 div#yellowBg{
     position: relative;
